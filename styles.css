@@ -1,0 +1,125 @@
+:root {
+  font-family: Arial, sans-serif;
+  color: #172033;
+  background: #f3f4f6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.store-header {
+  padding: 1.5rem;
+  color: white;
+  background: #131921;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+main {
+  width: min(680px, calc(100% - 2rem));
+  margin: 2rem auto;
+  flex: 1;
+}
+
+.controls,
+.product-card {
+  padding: 1.5rem;
+  border: 1px solid #d5d9d9;
+  border-radius: 8px;
+  background: white;
+  box-shadow: 0 2px 5px rgb(15 23 42 / 10%);
+}
+
+.controls {
+  display: grid;
+  gap: 1rem;
+}
+
+label {
+  display: grid;
+  gap: 0.4rem;
+  font-weight: 700;
+}
+
+select,
+input,
+button {
+  min-height: 2.5rem;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #a6a6a6;
+  border-radius: 4px;
+  font: inherit;
+}
+
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+button {
+  border-color: #f0a400;
+  background: #ffd814;
+  cursor: pointer;
+}
+
+button:hover:not(:disabled) {
+  background: #f7ca00;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+.product-card {
+  margin-top: 1.5rem;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+dl {
+  margin: 0;
+}
+
+dl > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #eaeded;
+}
+
+dl > div:last-child {
+  border-bottom: 0;
+}
+
+dt {
+  font-weight: 700;
+}
+
+dd {
+  margin: 0;
+  text-align: right;
+}
+
+.store-footer {
+  padding: 1.25rem;
+  color: white;
+  background: #232f3e;
+  text-align: center;
+}
